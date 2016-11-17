@@ -26,6 +26,8 @@ abstract class BaseActivity extends AppCompatActivity {
         FrameLayout container = (FrameLayout) findViewById(R.id.content_base);
         container.addView(LayoutInflater.from(this).inflate(getLayoutByResId(), null));
         initViews();
+
+
     }
 
     public abstract int getLayoutByResId();
